@@ -114,7 +114,8 @@ void sort(Address* addresses, int size) {
             if (city2.compare(city1) < 0) {
                 Address temp = addresses[i];
                 addresses[i] = addresses[j];
-                addresses[j] = temp;           
+                addresses[j] = temp;   
+                city1 = city2;
             }
         }
     }
